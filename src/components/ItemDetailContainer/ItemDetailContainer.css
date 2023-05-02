@@ -1,0 +1,37 @@
+.ItemDetailContainer{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.ItemImg{
+    height: 275px;
+
+
+
+}
+
+.CardItem{
+
+    display: grid;
+    background-color: bisque;
+    width: 500px;
+    justify-content: center;
+
+}
+
+.Info{
+    display: flex;
+    justify-content: center;
+}
+
+.ItemFooter{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Header{
+    justify-content: center;
+    display: flex;
+}

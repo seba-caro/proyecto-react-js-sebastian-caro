@@ -3,14 +3,14 @@ import CartWidget from "../CartWidget/CartWidget"
 const NavBar = () => {
     return (
     <nav>
-        <h1>
+        <h1 className="Name">
             Odil Comidas Caseras 
         </h1>
-        <div>
-            <button>Pan</button>
-            <button>Postres</button>
-            <button>Conocenos</button>
-            <button> Nuestros Productos</button>
+        <div className="navbar">
+            <button className="btn"  >Pan</button>
+            <button className="btn" >Postres</button>
+            <button className="btn" >Conocenos</button>
+            <button className="btn" > Nuestros Productos</button>
         </div>
         <CartWidget />
     </nav>

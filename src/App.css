@@ -1,11 +1,10 @@
-.App {
-  text-align: center;
-}
 
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+*/
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,6 +12,7 @@
   }
 }
 
+/*
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,7 +23,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+*/
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +35,66 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+
+nav {
+  background: linear-gradient(90deg, #72C6EF 0%, #004E8F 100%);
+}
+
+.navbar{
+
+justify-content: center;
+display: flex;
+
+
+}
+
+.carrito {
+display: flex;
+justify-content: center;
+margin-left: 5px;
+padding: 20px;
+
+}
+
+.imgc{
+  height: 45px;
+  margin-right: 10px;
+}
+
+.carritonumero{
+display: contents;
+font-size: 30px;
+}
+
+
+.btn{
+  padding: 10px 30px;
+  display:inline;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Name{
+  justify-content: center;
+}
+
+.bienvenidos{
+  background-color: white;
+  display: grid;
+  justify-content: center;
+  padding-top: 30px;
+  align-items: center;
+  background-image: url(.//Components/img/fondomain1.jpg);
+}
+
+
+#root{
+  background-image: url(.//Components/img/fondomain1.jpg);
 }

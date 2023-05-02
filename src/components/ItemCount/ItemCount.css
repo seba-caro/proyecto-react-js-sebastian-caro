@@ -1,0 +1,22 @@
+.Counter{
+    display: grid;
+    justify-content: center;
+    background-image: url(../img/fondomain1.jpg);
+
+  
+  }
+  .Controls{
+    display: flex;
+    padding: 10px;
+  }
+  
+  .Button{
+    width: 50px;
+    font-size: 40px;
+  }
+  
+  .Buttonagregar{
+    font-size: 15px;
+  }
+  
+  
