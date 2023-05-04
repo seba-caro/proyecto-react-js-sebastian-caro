@@ -1,0 +1,23 @@
+
+nav {
+    background: linear-gradient(90deg, #72C6EF 0%, #004E8F 100%);
+}
+
+.navbar{
+
+justify-content: center;
+  display: flex;
+}
+
+
+.Categories{
+    display:flex ;
+    justify-content: space-evenly;
+}
+
+nav a{
+    text-decoration: none;
+color: black;
+
+
+}

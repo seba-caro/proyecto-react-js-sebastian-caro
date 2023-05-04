@@ -41,18 +41,6 @@
 
 
 
-nav {
-  background: linear-gradient(90deg, #72C6EF 0%, #004E8F 100%);
-}
-
-.navbar{
-
-justify-content: center;
-display: flex;
-
-
-}
-
 .carrito {
 display: flex;
 justify-content: center;
