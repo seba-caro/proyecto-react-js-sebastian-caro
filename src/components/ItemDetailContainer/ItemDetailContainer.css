@@ -15,8 +15,9 @@
 
     display: grid;
     background-color: bisque;
-    width: 500px;
+    width: 700px;
     justify-content: center;
+    margin-top: 30px;
 
 }
 
@@ -32,6 +33,11 @@
 }
 
 .Header{
+    justify-content: center;
+    display: flex;
+}
+
+picture{
     justify-content: center;
     display: flex;
 }

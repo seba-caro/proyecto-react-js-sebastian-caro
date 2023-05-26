@@ -8,25 +8,25 @@ import CartItem from "../CartItem/CartItem"
 
 
 const Cart = () => {
-    const { cart, clearCart, totalQuantity, total} = useContext(CartContext)
-    console.log(total)
+    const { cart, clearCart, totalQuantity, Total} = useContext(CartContext)
+    console.log(Total())
     console.log(totalQuantity)
 
-    if(totalQuantity === 0) {
+    if(totalQuantity () === 0) {
         return (
             <div>
-                <h1>No hay items en el carrito</h1>
-                <Link to='/' className= 'Option'>Productos</Link>  
+                <h1 className="titulo">No hay items en el carrito</h1>
+                <Link to='/' className= 'Option1'>Productos</Link>  
             </div>
         )
     }
 
         return(
-            <div>
-            { cart.map(p => <CartItem key={p.id} {...p}/>)}
-            <h3>Total: ${total()}</h3>
-            <button onClick={() => clearCart()} className="Button">Limpiar carrito </button>
-            <Link to='/checkout' className="Option">Checkout</Link>
+            <div className="divcart">
+            { cart.map(p => <CartItem key={p.id} {...p}/>) }
+            <h3>Total: ${Total()}</h3>
+            <button onClick={() => clearCart()} className="Button2">Limpiar carrito </button>
+            <Link to='/checkout' className="Option1">Checkout</Link>
             </div>
         )
 }

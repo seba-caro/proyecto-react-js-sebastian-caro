@@ -9,22 +9,12 @@ const CartWidget = () => {
     
 
     return (
-        <div className='carrito' >
-            <img className='imgc' src={cart} alt="cart-widget"/> 
-            <h2 className='carritonumero'>0</h2>
-            
-        </div>
-    )
-
-    return (
-        <Link to='./cart' className='CartWidget' style={{ display: totalQuantity > 0 ? 'block' : 'none' }}>
+        <Link to='./cart' className='CartWidget' style={{ display: totalQuantity() > 0 ? 'flex' : 'none' }}>
             <img className='imgc' src={cart} alt='cart-widget'/>
-            {totalQuantity}
+            {totalQuantity()}
         </Link>
 
     )
-
-
 
 
 }

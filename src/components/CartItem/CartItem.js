@@ -1,12 +1,13 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
+import './CartItem.css'
 
 
 
 
 
 
-export const CartItem = ({nombre,precio,quantity,id}) =>{
+export const CartItem = ({name,price,quantity,id}) =>{
     const{removeItem} = useContext(CartContext)
 
 
@@ -14,10 +15,10 @@ export const CartItem = ({nombre,precio,quantity,id}) =>{
     return (
         <div className='container-principal'>
       <section className='CartItem'>
-        <h4>{nombre}</h4>
-        <h4>Precio: ${precio}</h4>
+        <h4>{name}</h4>
+        <h4>Precio: ${price}</h4>
         <h4>Cantidad: {quantity}</h4>        
-        <h4>Subtotal: ${precio*quantity}</h4>    
+        <h4>Subtotal: ${price * quantity}</h4>    
         <button onClick={()=> removeItem(id)} className='boton'>Eliminar Producto</button>
       </section>
     </div>

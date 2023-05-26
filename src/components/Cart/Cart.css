@@ -1,0 +1,31 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.Option1{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.Button2{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    background-color:black;
+    color: white;
+
+}
+
+
+.divcart{
+    display: grid;
+    justify-content: center;
+    margin: 5px;
+    padding: 10px;
+}

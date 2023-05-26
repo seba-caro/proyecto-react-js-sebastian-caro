@@ -10,7 +10,7 @@ const ItemDetail = ({id, name, img, category, price,stock, description}) => {
     const {addItem} = useContext(CartContext)
 
 const hanleOnAdd = (quantity) => {
-    setQuantityAdded (quantity)
+    setQuantityAdded(quantity)
 
     const item = {
         id, name, price
@@ -36,7 +36,7 @@ const hanleOnAdd = (quantity) => {
         Precio: ${price}
     </p>
     <p className="Info">
-        Descripcion: ${description}
+        Descripcion: {description}
     </p>
     <p className="Info">
         Categoria: {category}

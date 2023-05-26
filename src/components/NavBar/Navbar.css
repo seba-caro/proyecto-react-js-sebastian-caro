@@ -1,6 +1,6 @@
 
 nav {
-    background: linear-gradient(90deg, #72C6EF 0%, #004E8F 100%);
+    background-image: url(../img/fondonegro.jpg);
 }
 
 .navbar{
@@ -17,7 +17,10 @@ justify-content: center;
 
 nav a{
     text-decoration: none;
-color: black;
-
+color:white;
+align-items: center;
+display: flex;
+padding: 5px;
+justify-content: center;
 
 }

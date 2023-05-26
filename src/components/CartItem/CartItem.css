@@ -1,0 +1,20 @@
+.container-principal{
+    background-image: url(../img/fondonegro.jpg);
+    color: white;
+    width: 500px;
+    justify-content: center;
+    display: grid;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+.boton{
+    display: flex;
+    justify-self: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
