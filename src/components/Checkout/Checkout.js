@@ -1,6 +1,6 @@
 import { useContext, useState } from "react"
 import { CartContext } from "../../context/CartContext"
-import { Timestamp, addDoc, collection, documentId, getDoc, getDocs, query, writeBatch, where } from "firebase/firestore"
+import { Timestamp, addDoc, collection, documentId, getDocs, query, writeBatch, where } from "firebase/firestore"
 import { db } from "../../services/firebase/firebaseConfig"
 
 import CheckoutForm from "../CheckoutForm/CheckoutForm"
@@ -13,9 +13,9 @@ const Checkout = () => {
     const [loading, setLoading] = useState(false);
     const [orderId, setOrderId] = useState('');
 
-    const {cart, total, clearCart} = useContext (CartContext);
+    const { cart, Total, clearCart} = useContext (CartContext);
 
-    const createOrder = async ({name, phone, email, emailConfirm}) => {
+    const createOrder = async ({ name, phone, email, emailConfirm }) => {
         if (email !== emailConfirm) {
             alert ('Los emails no coinciden')
             setLoading(false)
@@ -30,7 +30,7 @@ const Checkout = () => {
                     name, phone, email
                 },
                 items: cart,
-                total: total,
+                total: Total(),
                 date: Timestamp.fromDate(new Date())
             }
             
@@ -54,7 +54,7 @@ const Checkout = () => {
                 const prodQuantity = productAddedToCart?.quantity
                 
 
-                if ( stockDb >= prodQuantity) {
+                if (stockDb >= prodQuantity) {
                     batch.update(doc.ref, { stock: stockDb - prodQuantity});
                 } else {
                     outOfStock.push({id: doc.id, ...dataDoc})
@@ -85,10 +85,7 @@ const Checkout = () => {
         return <h1>Se esta generando su orden...</h1>
     }
     if (orderId) {
-        <div className='ContainerId'>
-        <h1 className='ContainerId__order'>El id de su orden es: {orderId}</h1>
-        <Link to="/" className='ContainerId__Back'>Volver al comienzo</Link>
-    </div>
+        return <h1 className='ContainerId__order'>El id de su orden es: {orderId}</h1>
     }
 
     return(

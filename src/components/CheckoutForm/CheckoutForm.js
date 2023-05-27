@@ -1,4 +1,6 @@
 import { useState } from "react"
+import './CheckoutForm.css'
+
 
 
 
@@ -28,7 +30,7 @@ const CheckoutForm = ({ onConfirm }) => {
                 Nombre
                 <input
                 className="Input"
-                type="text"
+                type='text'
                 value={name}
                 onChange={({ target }) => setName(target.value)}
                 />
@@ -38,7 +40,7 @@ const CheckoutForm = ({ onConfirm }) => {
                 Telefono
                 <input
                 className="Input"
-                type="number"
+                type='text'
                 value={phone}
                 onChange={({ target }) => setPhone(target.value)}
                 />
@@ -48,7 +50,7 @@ const CheckoutForm = ({ onConfirm }) => {
                 Email
                 <input
                 className="Input"
-                type="text"
+                type='email'
                 value={email}
                 onChange={({ target }) => setEmail(target.value)}
                 />
@@ -58,7 +60,7 @@ const CheckoutForm = ({ onConfirm }) => {
                 Confirm Email
             <input
                 className='Input'
-                type='text'
+                type='email'
                 value={emailConfirm}
                 onChange={({ target }) => setEmailConfirm(target.value)}
             />
