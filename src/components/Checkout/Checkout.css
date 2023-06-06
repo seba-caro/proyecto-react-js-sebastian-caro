@@ -1,0 +1,14 @@
+.check{
+    display: flex;
+    justify-content:center ;
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+
+.orderid{
+    display: flex;
+    justify-content:center ;
+    padding-top: 250px;
+    font-size: 50px;
+}

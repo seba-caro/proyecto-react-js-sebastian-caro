@@ -24,7 +24,7 @@ return(
             <h4 className='Number'>{quantity}</h4> 
             <button className='Button' onClick={increment}>+</button>
     </div>
-    <div>
+    <div className='agr'>
     <button className='Buttonagregar' onClick={()=> onAdd(quantity)} disabled={!stock}>
     Agegar al carrito
     </button>

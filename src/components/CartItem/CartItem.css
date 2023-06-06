@@ -1,17 +1,29 @@
 .container-principal{
-    background-image: url(../img/fondonegro.jpg);
-    color: white;
-    width: 500px;
-    justify-content: center;
     display: grid;
-    padding: 10px;
-    margin-top: 10px;
+    background-color:rgb(169, 188, 241);
+    width: 700px;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding-bottom: 5px;
 }
 
 
 .boton{
+    padding: 10px;
     display: flex;
-    justify-self: center;
+    border-radius: 4px;
+    background-color: #121a13;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    width: 150px;
+    justify-content: center;
+}
+
+.boton:hover{
+    text-decoration: underline;
 }
 
 h3{

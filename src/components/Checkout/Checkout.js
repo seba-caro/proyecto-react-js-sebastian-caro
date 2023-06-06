@@ -6,7 +6,7 @@ import { db } from "../../services/firebase/firebaseConfig"
 import CheckoutForm from "../CheckoutForm/CheckoutForm"
 
 import { Link } from "react-router-dom"
-
+import './Checkout.css'
 
 
 const Checkout = () => {
@@ -82,15 +82,18 @@ const Checkout = () => {
     }
 
     if (loading){
-        return <h1>Se esta generando su orden...</h1>
+        return <h1 className="check" >Se esta generando su orden...</h1>
     }
     if (orderId) {
-        return <h1 className='ContainerId__order'>El id de su orden es: {orderId}</h1>
+        return <div><h1 className='orderid'>El id de su orden es: {orderId}</h1>
+        <Link to='/' className= 'Option1'>Productos</Link> 
+        </div>
+
     }
 
     return(
         <div>
-            <h1>Checkout</h1>
+            <h1 className="check" >CHECKOUT</h1>
             <CheckoutForm onConfirm={createOrder}/>
         </div>
     )

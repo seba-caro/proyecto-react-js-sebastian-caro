@@ -39,7 +39,7 @@ useEffect(() => {
 
     return (
         <div className="bienvenidos">
-        <h1> {greeting} </h1>
+        <h1 className="tit"> TODOS NUESTROS PRODUCTOS</h1>
         <ItemList products ={products} />
     </div>
  

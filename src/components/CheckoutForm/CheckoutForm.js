@@ -56,7 +56,8 @@ const CheckoutForm = ({ onConfirm }) => {
                 />
                 </label>
 
-                <label>
+                <label 
+                className="Label">
                 Confirm Email
             <input
                 className='Input'
@@ -66,8 +67,8 @@ const CheckoutForm = ({ onConfirm }) => {
             />
             </label>
 
-                <div className="Label">
-                <button type="submit" className="Button">Crear Orden</button>
+                <div className="botonform">
+                <button type="submit" className="Btnform">Crear Orden</button>
 
                 </div>
             </form>

@@ -1,0 +1,37 @@
+.Btnform {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #49af5a;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    margin: 5px;
+    justify-content: center;
+  }
+
+
+  .Label{
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    max-height: 1000px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: grid;
+    padding-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .botonform{
+    display: flex;
+    justify-content: center;
+  }
+
+  .Container{
+    padding: 50px;
+  }

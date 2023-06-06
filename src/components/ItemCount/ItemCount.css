@@ -13,10 +13,16 @@
   .Button{
     width: 50px;
     font-size: 40px;
+    margin: 5px;
+
   }
   
   .Buttonagregar{
     font-size: 15px;
+    padding: 10px;
   }
   
-  
+  .agr{
+    padding-bottom: 5px;
+    margin: 5px;
+  }

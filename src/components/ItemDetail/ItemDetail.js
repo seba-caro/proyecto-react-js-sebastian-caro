@@ -38,14 +38,12 @@ const hanleOnAdd = (quantity) => {
     <p className="Info">
         Descripcion: {description}
     </p>
-    <p className="Info">
-        Categoria: {category}
-    </p>
+
 </section>
 <footer className="ItemFooter">
     { 
         quantityAdded > 0 ? (
-            <Link to= '/cart' className= 'Option'>Terminar Compra</Link> 
+            <Link to= '/cart' className= 'btndet'>Terminar Compra</Link> 
         ) : (
         <ItemCount initial={1} stock={stock} onAdd={hanleOnAdd}/>
         )
