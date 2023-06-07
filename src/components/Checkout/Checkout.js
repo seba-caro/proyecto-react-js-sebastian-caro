@@ -86,7 +86,7 @@ const Checkout = () => {
     }
     if (orderId) {
         return <div><h1 className='orderid'>El id de su orden es: {orderId}</h1>
-        <Link to='/' className= 'Option1'>Productos</Link> 
+        <Link to='/' className= 'prod1'>Productos</Link> 
         </div>
 
     }
